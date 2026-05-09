@@ -1,0 +1,30 @@
+name: Update DERP Rules
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Regenerate derp.yaml
+        run: bun scripts/make-derp-rules.ts > rulesets/derp.yaml
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet rulesets/derp.yaml || (
+            git add rulesets/derp.yaml &&
+            git commit -m "chore: update derp rules" &&
+            git push
+          )
