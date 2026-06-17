@@ -1,0 +1,14 @@
+payload:
+- IP-CIDR,198.51.100.9/32,no-resolve
+- IP-CIDR,198.51.100.10/32,no-resolve
+- IP-CIDR,100.64.16.0/24,no-resolve
+- IP-CIDR,100.64.18.0/24,no-resolve
+
+- DOMAIN-SUFFIX,gstatic.com
+- DOMAIN-SUFFIX,googleapis.com
+- DOMAIN-SUFFIX,githubcopilot.com
+- DOMAIN-SUFFIX,visualstudio.com
+- DOMAIN-SUFFIX,github.com
+- DOMAIN-SUFFIX,ghe.com
+- DOMAIN-SUFFIX,stun.cloudflare.com
+- DOMAIN-KEYWORD,stun

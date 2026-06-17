@@ -1,0 +1,12 @@
+payload:
+- DOMAIN-SUFFIX,tailscale.com
+- DOMAIN-SUFFIX,ts.net
+- DOMAIN-SUFFIX,r2.cloudflarestorage.com
+# Microsoft
+- DOMAIN-SUFFIX,m.hotmail.com
+- DOMAIN-SUFFIX,outlook.com
+- DOMAIN-SUFFIX,outlook.office365.com
+- DOMAIN-SUFFIX,login.microsoftonline.com
+- DOMAIN-SUFFIX,msauth.net
+- DOMAIN-SUFFIX,ecs.office.com
+- DOMAIN-SUFFIX,client.wns.windows.com
