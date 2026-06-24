@@ -1,3 +1,6 @@
 payload:
 - IP-CIDR,198.51.100.16/32,no-resolve
 - DOMAIN-SUFFIX,argotunnel.com
+- DOMAIN-SUFFIX,exp.direct
+- DOMAIN-SUFFIX,ngrok-free.app
+- DOMAIN-SUFFIX,expo.dev
